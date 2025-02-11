@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Badirou Yecir</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content-container">
+            <!-- À propos -->
+            <div class="tab-content" style="display: block;">
+                <section id="about">
+                    <header>
+                        <h1>Badirou Yecir</h1>
+                        <p>Développeur Fullstack</p>
+                    </header>
+                    <h2>À propos de moi</h2>
+                    <p>Étudiant en informatique passionné par les langages de programmation...</p>
+                </section>
+            </div>
+
+            <!-- Compétences -->
+            <div class="tab-content">
+                <section id="skills">
+                    <h2>Compétences Techniques</h2>
+                    <ul>
+                        <li>Java</li>
+                        <li>HTML/CSS</li>
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                        <li>React</li>
+                        <li>Vue.js</li>
+                    </ul>
+                </section>
+            </div>
+
+            <!-- Projets -->
+            <div class="tab-content">
+                <section id="projects">
+                    <h2>Projets</h2>
+                    <div class="project">
+                        <h3>MatchCV</h3>
+                        <p>Plateforme web d'optimisation de recherche d'emploi...</p>
+                    </div>
+                    <div class="project">
+                        <h3>Application de gestion</h3>
+                        <p>Gestion d'événements...</p>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Contact -->
+            <div class="tab-content">
+                <section id="contact">
+                    <h2>Contact</h2>
+                    <p>Email : Badirouyecir@gmail.com</p>
+                    <p>Téléphone : 07 83 84 27 94</p>
+                    <p>Adresse : 123 Rue des Champs-Élysées, 75008 Paris</p>
+                </section>
+            </div>
+        </div>
+        <div class="timeline-container">
+            <div class="timeline-bar">
+                <div class="timeline-progress"></div>
+            </div>
+            <nav class="sections-nav">
+                <div class="section-title active" onclick="changeSection(0)">À propos</div>
+                <div class="section-title" onclick="changeSection(1)">Compétences</div>
+                <div class="section-title" onclick="changeSection(2)">Projets</div>
+                <div class="section-title" onclick="changeSection(3)">Contact</div>
+            </nav>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
