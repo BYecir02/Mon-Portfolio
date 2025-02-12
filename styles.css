@@ -1,25 +1,65 @@
-.body{
+/* Styles généraux pour le corps */
+body {
     border-radius: 50px;
+    margin: 0;
+    padding: 5px;
 }
+
+.home-container {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Style pour le bloc image */
+.logo-container {
+    text-align: center;
+    justify-content: center;
+    margin-left: 70px;
+    height: 90%;
+    display: flex;
+}
+
+.logo-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    width: 60%;
+}
+
+/* Style pour le bloc présentation */
+.text-container {
+    flex: 2;
+    padding: 20px;
+    border-radius: 10px;
+    height: 90%;
+    text-align: left;
+    margin-left: 70px;
+}
+
+
+
+/* Styles pour le conteneur principal */
 .container {
     background: linear-gradient(to right, #202221, #303531);
     border-radius: 15px;
 }
 
-.section {
+/* Styles pour les sections */
+.section  {
     width: 100%;
     height: 100vh;
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     text-align: right;
 }
 
 .section h2 {
     font-size: 60px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     color: #F6B83D;
 }
 
@@ -40,6 +80,7 @@
     margin-bottom: 20px;
 }
 
+/* Styles pour la barre latérale */
 .sidebar {
     margin-left: 5px;
     position: fixed;
@@ -79,5 +120,57 @@
 }
 
 .sidebar ul li a.active i {
-    color: #ff6347; /* Changez cette couleur selon vos préférences */
+    color: #ff6347;
+}
+
+/* Styles pour la section "À propos" */
+.container-about {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+}
+
+/* Style pour le bloc image */
+.image {
+    flex: 1;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 70px;
+    height: 90%;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+/* Style pour le bloc présentation */
+.presentation {
+    flex: 2;
+    padding: 20px;
+    border-radius: 10px;
+    height: 90%;
+}
+
+.presentation p {
+    font-size: 30px;
+    color: white;
+}
+
+/* Version responsive pour les petits écrans */
+@media (max-width: 768px) {
+    .container-about {
+        flex-direction: column;
+    }
+
+    .image, .presentation {
+        flex: 1;
+        width: 100%;
+    }
 }
