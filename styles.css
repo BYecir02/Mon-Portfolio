@@ -1,144 +1,76 @@
-:root {
-    --primary-color: #1976D2;
-    --secondary-color: #ff5722;
-    --background-color: #f8f9fa;
-    --text-color: #2c3e50;
-    --font-family: 'Roboto', sans-serif;
-}
-
-body {
-    font-family: var(--font-family);
-    margin: 0;
-    padding: 0;
-    background-color: var(--background-color);
-    color: var(--text-color);
-    line-height: 1.6;
-}
-
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr 250px;
-    gap: 40px;
+    background: linear-gradient(to right, #202221, #303531);
 }
 
-header {
-    background: linear-gradient(135deg, var(--primary-color), #0d47a1);
-    color: white;
-    padding: 60px 0;
-    margin-bottom: 40px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.timeline-container {
-    position: relative;
-    padding-left: 30px;
-}
-
-.timeline-bar {
-    position: absolute;
-    left: 0;
-    top: 50px;
-    width: 3px;
-    height: calc(100% - 100px);
-    background-color: #ddd;
-    transform: translateX(-50%);
-}
-
-.timeline-progress {
-    position: absolute;
+.section {
     width: 100%;
-    height: 0;
-    background-color: var(--secondary-color);
-    transition: height 0.5s ease;
-}
-
-.sections-nav {
-    position: relative;
-}
-
-.section-title {
-    position: relative;
-    margin-bottom: 30px;
-    cursor: pointer;
-    padding: 15px 20px;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-    font-weight: bold;
-}
-
-.section-title::before {
-    content: '';
-    position: absolute;
-    left: -34px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 15px;
-    height: 15px;
-    background-color: #fff;
-    border: 3px solid var(--primary-color);
-    border-radius: 50%;
-    transition: all 0.3s ease;
-}
-
-.section-title.active {
-    background-color: var(--primary-color);
-    color: white;
-}
-
-.section-title.active::before {
-    background-color: var(--secondary-color);
-    border-color: var(--secondary-color);
-}
-
-.tab-content {
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    padding: 30px;
-    min-height: 400px;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeIn 0.5s ease forwards;
-}
-
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-section#skills ul li {
-    background: linear-gradient(90deg, var(--primary-color), #64b5f6);
-    color: white;
-    margin: 10px 0;
-    padding: 12px;
-    border-radius: 6px;
-    display: inline-block;
-    margin-right: 10px;
-}
-
-.project {
-    background: white;
+    height: 100vh;
     padding: 20px;
-    border-radius: 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-style: typhone;
+}
+
+.section h2 {
+    font-size: 60px;
+    margin-bottom: 10px;
+    color: #F6B83D;
+}
+
+.section h4 {
+    font-size: 50px;
     margin-bottom: 20px;
-    border-left: 4px solid var(--primary-color);
-    transition: transform 0.3s ease;
+    color: #956E2F;
 }
 
-.project:hover {
-    transform: translateX(10px);
+.section h6 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #F9F9F9;
 }
 
-footer {
-    background: var(--text-color);
-    color: white;
-    text-align: center;
+.section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.sidebar {
+    margin-left: 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
     padding: 20px;
-    margin-top: 60px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.sidebar ul li {
+    margin: 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #F9F9F9;
+    font-size: 18px;
+}
+
+.sidebar ul li a:hover {
+    color: #F6B83D;
 }
