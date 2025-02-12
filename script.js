@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const observerOptions = {
         root: null,
         rootMargin: '0px',
-        threshold: 0.3 
+        threshold: 0.3
     };
 
     const observerCallback = (entries) => {
@@ -24,4 +24,28 @@ document.addEventListener('DOMContentLoaded', function () {
     sections.forEach(section => {
         observer.observe(section);
     });
+});
+
+const themeToggle = document.getElementById('themeToggle');
+const body = document.body;
+
+// Vérifier le thème stocké au chargement
+const currentTheme = localStorage.getItem('theme');
+if (currentTheme === 'dark') {
+    body.classList.add('dark-theme');
+} else {
+    body.classList.add('light-theme');
+}
+
+// Gestion du clic
+themeToggle.addEventListener('click', () => {
+    if (body.classList.contains('dark-theme')) {
+        body.classList.remove('dark-theme');
+        body.classList.add('light-theme');
+        localStorage.setItem('theme', 'light');
+    } else {
+        body.classList.remove('light-theme');
+        body.classList.add('dark-theme');
+        localStorage.setItem('theme', 'dark');
+    }
 });
