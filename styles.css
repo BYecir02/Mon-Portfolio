@@ -138,8 +138,8 @@ body {
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-left: 70px;
     height: 90%;
+    margin-right: 20px;
 }
 
 .image img {
@@ -156,6 +156,8 @@ body {
     padding: 20px;
     border-radius: 10px;
     height: 90%;
+    margin-left: 70px;
+    text-align: left;
 }
 
 .presentation p {
