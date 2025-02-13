@@ -3,12 +3,18 @@
 @media (max-width: 768px) {
     body {
         font-size: 14px;
+        width: 100%;
     }
     .section{
         padding: 25px;
     }
     .section h2 {
-        font-size: 2rem;
+        font-size: 20px;
+    }
+    .home-container{
+        justify-content: center;
+
+        padding: 20px;
     }
     .titre {
         font-size: 1.8rem;
