@@ -144,7 +144,6 @@ body.dark-theme .sidebar ul li a i {
 /* Styles pour les sections */
 .section {
     width: 100%;
-    height: 100vh;
     padding: 10px;
     box-sizing: border-box;
     display: flex;
