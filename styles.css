@@ -1,7 +1,7 @@
 /* Styles généraux pour le corps */
 body {
     border-radius: 50px;
-    font-family: 'open sans', monospace;
+    font-family: 'Open Sans', sans-serif; /* Correction du nom de la police */
     margin: 0;
     padding: 5px;
     transition: background 0.3s, color 0.3s;
@@ -10,7 +10,7 @@ body {
 .home-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; /* Correction ici */
 }
 
 /* Style pour le bloc image */
@@ -137,8 +137,14 @@ body.dark-theme .sidebar ul li a i {
     font-size: 60px;
     margin-bottom: 5px;
     color: #F6B83D;
+
 }
 
+.titre {
+    font-size: 60px;
+    margin-bottom: 5px;
+    color: #F6B83D; 
+}
 .section h4 {
     font-size: 50px;
     margin-bottom: 20px;
@@ -146,7 +152,7 @@ body.dark-theme .sidebar ul li a i {
 }
 
 .section h6 {
-    font-size: 30px;
+    font-size: 20px;
     margin-bottom: 20px;
     color: #F9F9F9;
 }
@@ -200,6 +206,64 @@ body.dark-theme .sidebar ul li a i {
     color: #ff6347;
 }
 
+.skills-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 20px;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 20px;
+    scrollbar-width: none; /* Masque la barre de défilement */
+    color: #F9F9F9; /* Texte clair pour contraster */
+}
+
+.skills-column {
+    flex: 1 1 200px; /* Largeur flexible avec une base de 200px */
+    max-width: 250px; /* Limite la largeur maximale */
+    border-radius: 20px; /* Coins arrondis pour les colonnes */
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Ombre subtile */
+    background-color: #303531; /* Fond légèrement plus clair que le fond principal */
+    text-align: center;
+    padding: 20px;
+}
+
+.skills-title {
+    border-bottom: 1px solid #F6B83D; /* Bordure inférieure avec la couleur accent */
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #F6B83D; /* Couleur accent pour le titre */
+}
+
+.skills-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.skill-card {
+    background-color: #202221; /* Fond sombre pour les cartes */
+    border: 1px solid #F6B83D; /* Bordure avec la couleur accent */
+    border-radius: 15px; /* Coins arrondis pour les cartes */
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Ombre subtile */
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    font-size: 1em;
+    color: #F9F9F9; /* Texte clair pour contraster */
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Augmente l'ombre au survol */
+}
+
+
 /* Styles pour la section "À propos" */
 .container-about {
     display: flex;
@@ -215,7 +279,7 @@ body.dark-theme .sidebar ul li a i {
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     height: 90%;
-    margin-right: 20px;
+    margin-right: 70px;
 }
 
 .image img {
@@ -237,7 +301,7 @@ body.dark-theme .sidebar ul li a i {
 }
 
 .presentation p {
-    font-size: 30px;
+    font-size: 25px;
     color: white;
 }
 

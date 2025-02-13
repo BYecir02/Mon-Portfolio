@@ -49,3 +49,20 @@ themeToggle.addEventListener('click', () => {
         localStorage.setItem('theme', 'dark');
     }
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const atoutsElements = document.querySelectorAll('.atouts');
+    const section = document.getElementById('home');
+    const sectionRect = section.getBoundingClientRect();
+
+    atoutsElements.forEach(element => {
+        const maxX = sectionRect.width - element.offsetWidth;
+        const maxY = sectionRect.height - element.offsetHeight;
+
+        const randomX = Math.floor(Math.random() * maxX);
+        const randomY = Math.floor(Math.random() * maxY);
+
+        element.style.left = `${randomX}px`;
+        element.style.top = `${randomY}px`;
+    });
+});
