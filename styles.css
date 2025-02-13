@@ -8,25 +8,7 @@ body {
 }
 
 .home-container {
-    display: flex;
     align-items: center;
-    justify-content: space-between; /* Correction ici */
-}
-
-/* Style pour le bloc image */
-.logo-container {
-    text-align: center;
-    justify-content: center;
-    margin-left: 70px;
-    height: 90%;
-    display: flex;
-}
-
-.logo-container img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    width: 60%;
 }
 
 /* Style pour le bloc présentation */
@@ -35,8 +17,14 @@ body {
     padding: 20px;
     border-radius: 10px;
     height: 90%;
-    text-align: left;
-    margin-left: 70px;
+    text-align: center;
+    justify-content: center; /* Correction ici */
+}
+
+.text-container img {
+    width: 15%;
+    height: 15%;
+    margin-top: 25px;
 }
 
 .theme-toggle {
@@ -152,13 +140,13 @@ body.dark-theme .sidebar ul li a i {
 }
 
 .section h6 {
-    font-size: 20px;
+    font-size: 25px;
     margin-bottom: 20px;
     color: #F9F9F9;
 }
 
 .section p {
-    font-size: 18px;
+    font-size: 40px;
     margin-bottom: 20px;
 }
 
@@ -216,7 +204,6 @@ body.dark-theme .sidebar ul li a i {
     padding: 20px;
     margin-right: 40px;
     margin-left: 40px;
-    margin-top: 20px;
     scrollbar-width: none; /* Masque la barre de défilement */
     color: #F9F9F9; /* Texte clair pour contraster */
 }
