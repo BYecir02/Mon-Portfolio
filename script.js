@@ -26,6 +26,21 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+// Ajoutez ceci à votre fichier script.js
+document.addEventListener('scroll', function() {
+    const sections = document.querySelectorAll('.section');
+    const titles = document.querySelectorAll('.titre');
+    sections.forEach((section, index) => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+            titles[index].classList.add('visible');
+        } else {
+            titles[index].classList.remove('visible');
+        }
+    });
+});
+
+
 const themeToggle = document.getElementById('themeToggle');
 const body = document.body;
 

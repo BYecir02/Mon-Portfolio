@@ -1,0 +1,65 @@
+/* Style pour la sidebar*/
+
+.sidebar {
+    margin-left: 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.sidebar ul li {
+    margin: 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #F9F9F9;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    color: #F6B83D;
+}
+
+.sidebar ul li a.active i {
+    color: #ff6347;
+}
+
+
+body {
+    border-radius: 50px;
+    font-family: 'Open Sans', sans-serif; /* Correction du nom de la police */
+    margin: 0;
+    padding: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.titre {
+    font-size: 50px;
+    margin-bottom: 5px;
+    color: #F6B83D; 
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+}
+
+.titre.visible {
+    opacity: 1;
+}
