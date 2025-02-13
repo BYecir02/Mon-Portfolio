@@ -66,3 +66,26 @@ document.addEventListener("DOMContentLoaded", function() {
         element.style.top = `${randomY}px`;
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    typeWriter('Badirou Mohamed Yecir', 'typing-target', 100);
+});
+
+function typeWriter(text, elementId, speed = 100) {
+    const element = document.getElementById(elementId);
+    let i = 0;
+    element.innerHTML = '';
+    
+    function type() {
+        if (i < text.length) {
+            element.innerHTML += text.charAt(i);
+            i++;
+            setTimeout(type, speed);
+        } else {
+            // Anime les autres éléments après fin d'écriture
+            document.querySelectorAll('.text-container h4, .text-container h6')
+                   .forEach(el => el.style.opacity = 1);
+        }
+    }
+    type();
+}

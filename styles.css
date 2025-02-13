@@ -7,8 +7,48 @@ body {
     transition: background 0.3s, color 0.3s;
 }
 
+.typing-effect {
+    overflow: hidden;
+    border-right: 2px solid #333; /* Curseur */
+    white-space: nowrap;
+
+    letter-spacing: 2px;
+    display: inline-block; /* Nécessaire pour l'animation de largeur */
+    animation: 
+        typing 2s steps(24, end), /* 24 = nombre de caractères dans ton nom */
+        blink-caret 0.5s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #333; }
+}
+
+/* Style pour le reste du contenu */
+.text-container p, .text-container h6 {
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+    animation-delay: 2.2s; /* Démarre après l'animation du titre */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.text-container {
+    text-align: center;
+    padding: 20px;
+}
+
 .home-container {
     align-items: center;
+    justify-content: center;
 }
 
 /* Style pour le bloc présentation */
@@ -133,11 +173,6 @@ body.dark-theme .sidebar ul li a i {
     margin-bottom: 5px;
     color: #F6B83D; 
 }
-.section h4 {
-    font-size: 50px;
-    margin-bottom: 20px;
-    color: #956E2F;
-}
 
 .section h6 {
     font-size: 25px;
@@ -148,6 +183,7 @@ body.dark-theme .sidebar ul li a i {
 .section p {
     font-size: 40px;
     margin-bottom: 20px;
+    color: #956E2F;
 }
 
 /* Styles pour la barre latérale */
