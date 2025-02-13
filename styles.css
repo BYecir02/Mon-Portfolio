@@ -284,7 +284,7 @@ body.dark-theme .sidebar ul li a i {
 
 .timeline-container {
     display: flex;
-    justify-content: center;
+
     align-items: center;
     width: 100%;
     padding: 50px 0;
@@ -300,6 +300,9 @@ body.dark-theme .sidebar ul li a i {
     color: white;
 }
 
+.timeline i {
+    margin-bottom: 100px;
+}
 .barre {
     flex: 1; /* Permet à la barre de s'étendre entre les points */
     height: 4px;
@@ -307,6 +310,7 @@ body.dark-theme .sidebar ul li a i {
     background-size: 20px 100%;
     background-repeat: repeat-x;
     z-index: 0;
+    margin-bottom: 100px;
 }
 
 .entry {
