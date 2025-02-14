@@ -104,3 +104,19 @@ function typeWriter(text, elementId, speed = 100) {
     }
     type();
 }
+
+// Gestion des compétences
+document.querySelectorAll('.menu-item').forEach(button => {
+    button.addEventListener('click', function() {
+        // Retire l'état actif de tous les éléments
+        document.querySelectorAll('.menu-item, .content-category').forEach(el => {
+            el.classList.remove('active');
+        });
+
+        // Ajoute l'état actif aux éléments cliqués
+        this.classList.add('active');
+        const targetId = this.dataset.target;
+        document.getElementById(targetId).classList.add('active');
+    });
+});
+

@@ -83,122 +83,61 @@
         </section>
         <section id="skills" class="section" style="height: 100vh;">
             <span id="titre-skills" class="titre" style="text-align: left; margin-left: 70px;">Compétences</span>
-            <div class="skills-section">
-                <div class="skills-column">
-                    <div class="skills-title">
-                        <h5>Langages de Programmation</h5>
-                    </div>
-                    <div class="skills-list">
-                        <div class="skill-card">HTML/CSS</div>
-                        <div class="skill-card">JavaScript</div>
-                        <div class="skill-card">Python</div>
-                        <div class="skill-card">C</div>
-                        <div class="skill-card">Matlab</div>
-                    </div>
+            <div class="skills-container">
+                <div class="menu">
+                    <button class="menu-item active" data-target="langages">Langages</button>
+                    <button class="menu-item" data-target="frameworks">Frameworks</button>
+                    <button class="menu-item" data-target="outils">Outils</button>
+                    <button class="menu-item" data-target="bdd">Bases de Données</button>
                 </div>
-            
-                <div class="skills-column">
-                    <div class="skills-title">
-                        <h5>Frameworks et Bibliothèques</h5>
+        
+                <div class="content-box">
+                    <!-- Langages -->
+                    <div id="langages" class="content-category active">
+                        <ul class="content-list">
+                            <li>Java (en apprentissage)</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Python</li>
+                            <li>C</li>
+                            <li>Matlab</li>
+                        </ul>
                     </div>
-                    <div class="skills-list">
-                        <div class="skill-card">React JS</div>
-                        <div class="skill-card">Vue JS</div>
-                        <div class="skill-card">Django</div>
-                        <div class="skill-card">Node JS</div>
-                        <div class="skill-card">Tailwind CSS</div>
+        
+                    <!-- Frameworks -->
+                    <div id="frameworks" class="content-category">
+                        <ul class="content-list">
+                            <li>React JS</li>
+                            <li>Vue JS</li>
+                            <li>Django</li>
+                            <li>Node JS</li>
+                        </ul>
                     </div>
-                </div>
-            
-                <div class="skills-column">
-                    <div class="skills-title">
-                        <h5>Outils et Technologies</h5>
+        
+                    <!-- Outils -->
+                    <div id="outils" class="content-category">
+                        <ul class="content-list">
+                            <li>Git</li>
+                            <li>Visual Studio Code</li>
+                            <li>Docker</li>
+                            <li>Figma</li>
+                        </ul>
                     </div>
-                    <div class="skills-list">
-                        <div class="skill-card">Git</div>
-                        <div class="skill-card">Docker</div>
-                        <div class="skill-card">Visual Studio Code</div>
-                        <div class="skill-card">Figma</div>
-                        <div class="skill-card">Canva</div>
-                    </div>
-                </div>
-            
-                <div class="skills-column">
-                    <div class="skills-title">
-                        <h5>Bases de Données</h5>
-                    </div>
-                    <div class="skills-list">
-                        <div class="skill-card">MySQL</div>
-                        <div class="skill-card">SQLite</div>
+        
+                    <!-- Bases de données -->
+                    <div id="bdd" class="content-category">
+                        <ul class="content-list">
+                            <li>MySQL</li>
+                            <li>SQLite</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
         <section id="education" class="section" >
             <span id="titre-education" style="text-align: left; margin-left: 70px;" class="titre">Mon parcours</span>
-            <div class="timeline-container">
-                <div class="timeline">
-                    <div class="barre"></div><i class="fas fa-arrow-right"></i>
-                    <div class="entry">
-                        <div class="dot"></div>
-                        <span>2021</span>
-                        <span>BACCALAUREAT SCIENTIFIQUE D</span>
-                        <span>CS Le Rocher</span>
-                        <span> Cotonou Bénin</span>
-                    </div>
-                    <div class="barre"></div><i class="fas fa-arrow-right"></i>
-                    <div class="entry">
-                        <div class="dot"></div>
-                        <span>2023</span>
-                        <span>CYCLE PREPARATOIRE</span>
-                        <span> CPMS </span>
-                        <span> Cotonou Bénin</span>
-                    </div>
-                    <div class="barre"></div><i class="fas fa-arrow-right"></i>
-                    <div class="entry">
-                        <div class="dot"></div>
-                        <span>2025</span>
-                        <span>CYCLE INGENIEUR</span>
-                        <span> JUNIA ISEN </span>
-                        <span> Lille France</span>
-                    </div>
-                    <div class="barre"></div><i class="fas fa-arrow-right"></i>
-                </div>
-            </div>
 
-            <div class="timeline-container">
-                <div class="timeline">
-                    <i class="fas fa-arrow-left"></i>
-                    <div class="barre"></div>
-                    <div class="entry">
-                        <div class="dot"></div>
-                        <span>Juillet 2024 - Août 2024</span>
-                        <span>Employé commercial</span>
-                        <span>ELDPH (Super U)</span>
-                        <span>La Madeleine, France</span>
-                    </div>
-                    <i class="fas fa-arrow-left"></i>
-                    <div class="barre"></div>
-                    <div class="entry">
-                        <div class="dot"></div>
-                        <span>Octobre 2021 - Juin 2023</span>
-                        <span>Employé commercial</span>
-                        <span>KESD Services</span>
-                        <span>Cotonou, Bénin</span>
-                    </div>
-                    <i class="fas fa-arrow-left"></i>
-                    <div class="barre"></div>
-                    <div class="entry">
-                        <div class="dot"></div>
-                        <span>Juillet 2022 - Août 2022</span>
-                        <span>Stage Académique</span>
-                        <span>Safar Travels & Tours</span>
-                        <span>Cotonou, Bénin</span>
-                    </div>
-                    <i class="fas fa-arrow-left"></i>
-                    <div class="barre"></div>
-                </div>
-            </div> 
         </section>
     </div>
     <script src="script.js"></script>
