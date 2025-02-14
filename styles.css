@@ -329,7 +329,9 @@ body.dark-theme .sidebar ul li a i {
 /* Compétences */
 .skills-container {
     display: flex;
-    margin: 70px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 25px;
     gap: 50px;
     height: 70%;
 }
