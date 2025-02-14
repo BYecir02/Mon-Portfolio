@@ -545,3 +545,33 @@ body.dark-theme .sidebar ul li a i {
     font-size: 0.9em;
     opacity: 0.8;
 }
+
+.projects-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px;
+}
+
+.swiper-button {
+    background: none;
+    border: none;
+    color: #F6B83D;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.swiper-button:hover {
+    transform: scale(1.2);
+    color: #ffd700;
+}
+
+.projet{
+    width:600px;
+    height: 500px;
+    background: rgba(246, 184, 61, 0.1);
+}
