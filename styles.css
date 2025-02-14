@@ -381,12 +381,32 @@ body.dark-theme .sidebar ul li a i {
 }
 
 .content-list li {
-    padding: 8px 15px;
-    margin: 5px;
-    background-color: #202221;
-    border-radius: 5px;
-    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 20px;
+    margin: 8px;
+    background-color: #2d2d2d;
+    border-radius: 8px;
+    transition: all 0.3s ease;
 }
+
+.content-list li i {
+    font-size: 1.4em;
+    width: 30px;
+    text-align: center;
+    color: #F6B83D;
+}
+
+/* Couleurs spécifiques pour certaines icônes */
+.fa-html5 { color: #E34F26 !important; }
+.fa-css3-alt { color: #1572B6 !important; }
+.fa-js-square { color: #F7DF1E !important; }
+.fa-python { color: #3776AB !important; }
+.fa-react { color: #61DAFB !important; }
+.fa-vuejs { color: #4FC08D !important; }
+.fa-node { color: #339933 !important; }
+.fa-docker { color: #2496ED !important; }
 
 .content-list li:hover {
     transform: translateX(10px);
@@ -398,4 +418,14 @@ body.dark-theme .sidebar ul li a i {
 
 .content-category.active {
     display: block;
+}
+
+@media (max-width: 768px) {
+    .content-list {
+        columns: 1;
+    }
+    
+    .content-list li {
+        font-size: 14px;
+    }
 }
