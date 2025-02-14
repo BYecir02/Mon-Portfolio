@@ -250,38 +250,6 @@ body.dark-theme .sidebar ul li a i {
 .timeline i {
     margin-bottom: 100px;
 }
-.barre {
-    flex: 1; /* Permet à la barre de s'étendre entre les points */
-    height: 4px;
-    background: linear-gradient(to right, white 50%, transparent 50%);
-    background-size: 20px 100%;
-    background-repeat: repeat-x;
-    z-index: 0;
-    margin-bottom: 100px;
-}
-
-.entry {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 1;
-    position: relative;
-    width: auto; /* Ajuste la largeur pour s'adapter au contenu */
-}
-
-.dot {
-    width: 50px;
-    height: 50px;
-    background-color: #F6B83D;
-    box-shadow:
-        0 0 40px 12px rgba(255, 225, 0, 0.6),
-        0 0 20px 4px rgba(255, 165, 0, 0.4) inset,
-        0 0 8px 2px rgba(255, 255, 255, 0.5) inset;
-    border: 4px solid #956E2F;
-    border-radius: 50%;
-    margin-bottom: 15px;
-    transition: all 0.3s ease;
-}
 
 @keyframes sun-glow {
     0% { box-shadow: 0 0 40px 12px rgba(255, 225, 0, 0.6); }
@@ -430,4 +398,150 @@ body.dark-theme .sidebar ul li a i {
     .content-list li {
         font-size: 14px;
     }
+}
+
+/* Conteneur principal */
+.parcour-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 50px;
+}
+
+/* Conteneurs études/expériences */
+.etude-container, .experience-container {
+    height: 600px;
+    width: 500px;
+    border: 1px solid #F6B83D;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.etude-container > span,
+.experience-container > span {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-weight: 600;
+    color: #F6B83D;
+    z-index: 2;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Barre verticale */
+.barre {
+    position: relative;
+    height: 500px;
+    width: 2px;
+    background-color: #F6B83D;
+    margin-top: 30px;
+}
+
+/* Conteneur de chaque point + textes */
+.point-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%); /* Centrage vertical précis */
+    display: flex;
+    align-items: center;
+}
+
+/* Style des points */
+.point {
+    width: 20px;
+    height: 20px;
+    background: #F6B83D;
+    border-radius: 50%;
+    flex-shrink: 0;
+    box-shadow: 0 0 10px rgba(246, 184, 61, 0.3);
+}
+
+/* Style commun des textes */
+.texte-gauche {
+    width: 150px;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #fff;
+    background: rgba(246, 184, 61, 0.1);
+    backdrop-filter: blur(2px);
+    transition: all 0.3s ease;
+}
+
+.texte-droit {
+    width: 150px;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #fff;
+    background: rgba(246, 184, 61, 0.1);
+    backdrop-filter: blur(2px);
+    transition: all 0.3s ease;
+}
+
+/* Alignement spécifique */
+.texte-gauche {
+    text-align: right;
+    margin-right: 40px;
+}
+
+.texte-droit {
+    text-align: left;
+    margin-left: 40px;
+}
+
+/* Effets au survol */
+.texte-gauche:hover, .texte-droit:hover {
+    transform: translateY(-3px);
+    background: rgba(246, 184, 61, 0.15);
+    box-shadow: 0 4px 15px rgba(246, 184, 61, 0.2);
+}
+
+/* Responsive basique */
+@media (max-width: 768px) {
+    .parcour-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .etude-container, .experience-container {
+        width: 90%;
+        height: auto;
+        min-height: 500px;
+    }
+}
+
+.simple-footer {
+    background: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 50px;
+}
+
+.social-icons {
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    color: #F6B83D;
+    font-size: 24px;
+    margin: 0 15px;
+    transition: opacity 0.3s;
+}
+
+.social-icons a:hover {
+    opacity: 0.7;
+}
+
+.copyright {
+    font-size: 0.9em;
+    opacity: 0.8;
 }
