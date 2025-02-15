@@ -126,3 +126,28 @@ const swiper = new Swiper('.swiper', {
         prevEl: '.swiper-button-prev',
     },
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const projects = document.querySelectorAll('.projet');
+    const prevButton = document.querySelector('.swiper-left');
+    const nextButton = document.querySelector('.swiper-right');
+    let currentIndex = 0;
+
+    function showProject(index) {
+        projects.forEach((project, i) => {
+            project.style.display = i === index ? 'block' : 'none';
+        });
+    }
+
+    prevButton.addEventListener('click', () => {
+        currentIndex = (currentIndex > 0) ? currentIndex - 1 : projects.length - 1;
+        showProject(currentIndex);
+    });
+
+    nextButton.addEventListener('click', () => {
+        currentIndex = (currentIndex < projects.length - 1) ? currentIndex + 1 : 0;
+        showProject(currentIndex);
+    });
+
+    showProject(currentIndex);
+});
