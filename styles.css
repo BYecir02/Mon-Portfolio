@@ -574,4 +574,46 @@ body.dark-theme .sidebar ul li a i {
     width:600px;
     height: 500px;
     background: rgba(246, 184, 61, 0.1);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.projet .titre-du-projet{
+    font-size: 20px;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+
+.projet .description-projet{
+    font-size: 15px;
+    color: white;
+    text-align: left;
+}
+
+.projet .technologies{
+    font-size: 20px;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+
+.projet .liste-technologies{
+    font-size: 15px;
+    color: white;
+    text-align: left;
+}
+
+.projet .realisations{
+    font-size: 20px;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+
+.projet ul li {
+    list-style: none;
+    text-align: left;
+    list-style-type: square;
+    color: white;
 }
