@@ -8,37 +8,6 @@
       margin-left: 20px;
     }
   }
-  
-  /* Version Desktop */
-@media (min-width: 769px) {
-    .sidebar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 250px;
-        height: 100vh;
-        padding: 20px;
-        background: rgba(32, 34, 33, 0.98);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        z-index: 1000;
-    }
-
-    .sidebar ul {
-        flex-direction: column;
-        height: 70%;
-    }
-
-    .sidebar ul li a {
-        padding: 15px;
-        display: block;
-    }
-
-    .container {
-        margin-left: 260px; /* Laisser de l'espace pour la sidebar */
-    }
-}
 
 
   @media (max-width: 780px) {
