@@ -1,45 +1,188 @@
+/* Ajoutez ces médias queries à la fin de votre CSS existant */
 
-/* Media Queries */
-@media (max-width: 768px) {
-    body {
-        font-size: 14px;
-        width: 100%;
-    }
-    .section{
-        padding: 25px;
-    }
-    .section h2 {
-        font-size: 20px;
-    }
-    .home-container{
-        justify-content: center;
-
-        padding: 20px;
-    }
-    .titre {
-        font-size: 1.8rem;
-    }
-    .section h6 {
-        font-size: 1rem;
-    }
-    .section p {
-        font-size: 1rem;
-    }
+@media (max-width: 1200px) {
     .sidebar {
-        width: 100%;
-        height: 100%;
-        position: fixed;
-        padding: 10px;
+      width: 70px;
+      padding: 10px;
     }
-    .container-about, .timeline-container {
-        margin-left: 0; /* Réinitialisation du décalage sur mobile */
+    
+    .sidebar ul li a {
+      font-size: 0;
     }
+    
+    .sidebar ul li a i {
+      font-size: 24px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .container {
+      margin-left: 70px;
+    }
+    
+    .titre {
+      font-size: 40px;
+      margin-left: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .sidebar {
+      bottom: 0;
+      top: auto;
+      width: 100%;
+      height: 60px;
+      padding: 0;
+      background: rgba(0,0,0,0.8);
+      z-index: 1000;
+    }
+    
+    .sidebar ul {
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 0 10px;
+    }
+    
+    .container {
+      margin-left: 0;
+      padding-bottom: 80px;
+    }
+    
+    .theme-toggle {
+      top: 10px;
+      right: 10px;
+    }
+    
+    .home-container img {
+      width: 30% !important;
+    }
+    
+    .text-container h2 {
+      font-size: 30px !important;
+    }
+    
+    .text-container p {
+      font-size: 18px !important;
+    }
+    
+    .text-container h6 {
+      font-size: 14px !important;
+    }
+    
     .container-about {
-        flex-direction: column;
+      flex-direction: column;
+      margin: 0 20px !important;
     }
-    .image, .presentation {
-        flex: 1;
-        width: 100%;
-        margin: 0;
+    
+    .presentation, .image {
+      margin: 0 !important;
+      width: 100% !important;
     }
-}
+    
+    .image {
+      height: 300px !important;
+      margin-top: 20px !important;
+    }
+    
+    .projects-container {
+      flex-direction: column;
+      margin: 20px !important;
+    }
+    
+    .projet {
+      width: 100% !important;
+      height: auto !important;
+      margin: 10px 0;
+    }
+    
+    .skills-container {
+      flex-direction: column;
+      margin: 20px !important;
+    }
+    
+    .menu {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    
+    .menu-item {
+      padding: 10px 15px !important;
+      font-size: 14px !important;
+    }
+    
+    .parcour-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+    
+    .etude-container, .experience-container {
+      width: 90% !important;
+      height: auto !important;
+      padding: 40px 0;
+    }
+    
+    .texte-gauche, .texte-droit {
+      width: 120px;
+      font-size: 12px !important;
+      padding: 10px !important;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .typing-effect {
+      font-size: 24px !important;
+    }
+    
+    .text-container img {
+      width: 50% !important;
+    }
+    
+    .titre {
+      font-size: 30px !important;
+      margin-left: 10px !important;
+    }
+    
+    .content-list {
+      columns: 1 !important;
+    }
+    
+    .content-list li {
+      font-size: 14px;
+    }
+    
+    .barre {
+      height: 400px;
+    }
+    
+    .simple-footer {
+      padding: 15px;
+    }
+  }
+  
+  /* Ajoutez ces modifications aux styles existants */
+  .home-container {
+    padding-top: 50px;
+  }
+  
+  .text-container h2 {
+    font-size: 40px;
+    white-space: normal !important;
+    border-right: none !important;
+    animation: none !important;
+  }
+  
+  .text-container p, .text-container h6 {
+    animation: none !important;
+    opacity: 1 !important;
+  }
+  
+  .projet {
+    overflow-y: auto;
+    max-height: 70vh;
+  }
+  
+  .parcour-container {
+    padding: 20px;
+  }
