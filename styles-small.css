@@ -54,11 +54,17 @@
   
     .projects-container {
       flex-direction: column;
-      margin: 20px !important;
+      margin-bottom: 20px;
+      margin-left: 20px;
+      margin-right: 20px;
     }
   
+    .swiper-container {
+      text-align: center;
+    }
+
     .projet {
-      width: 100% !important;
+      width: 88% !important;
       height: auto !important;
       margin: 10px 0;
     }
@@ -198,11 +204,6 @@
   .text-container p, .text-container h6 {
     animation: none !important;
     opacity: 1 !important;
-  }
-  
-  .projet {
-    overflow-y: auto;
-    max-height: 70vh;
   }
   
   .parcour-container {

@@ -593,6 +593,10 @@ body.dark-theme .sidebar ul li a i {
     margin: 40px;
 }
 
+.swiper-container {
+    text-align: center;
+  }
+  
 .swiper-button {
     background: none;
     border: none;
