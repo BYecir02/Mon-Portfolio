@@ -140,7 +140,7 @@
 
     .container {
         margin-left: 0 !important;
-        padding-bottom: 80px !important;
+
     }
 } 
 
@@ -180,10 +180,6 @@
   
     .sidebar ul li a i {
       font-size: 20px;
-    }
-  
-    .container {
-      padding-bottom: 90px;
     }
   }
   
