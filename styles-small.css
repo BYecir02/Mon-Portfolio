@@ -63,6 +63,20 @@
   
     .swiper-container {
       text-align: center;
+      margin: 0;
+    }
+
+    .swiper-container button {
+        font-size: 20px;
+        padding: 20px;
+        background-color: #303531;
+        border-radius: 40%; 
+        margin: 20px;
+    }
+
+    .swiper-container button i {
+        font-size: 20px;
+
     }
 
     .projet {
