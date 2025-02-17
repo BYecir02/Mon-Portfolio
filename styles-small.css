@@ -23,22 +23,28 @@
       right: 10px;
     }
   
-    .home-container img {
-      width: 30% !important;
-    }
-  
     .text-container h2 {
-      font-size: 30px !important;
+      font-size: 40px !important;
     }
   
     .text-container p {
-      font-size: 18px !important;
+      font-size: 25px !important;
     }
   
     .text-container h6 {
-      font-size: 14px !important;
+      font-size: 15px !important;
     }
-  
+
+    .text-container img {
+        width: 20%;
+        height: 20%;
+        margin-top: 25px;
+    }
+
+    .qualite{
+        font-size: 25px !important;
+    }
+
     .container-about {
       flex-direction: column;
       margin: 0 20px 0 20px !important;
@@ -193,10 +199,6 @@
   @media (max-width: 480px) {
     .typing-effect {
       font-size: 24px !important;
-    }
-  
-    .text-container img {
-      width: 50% !important;
     }
   
     .titre {
