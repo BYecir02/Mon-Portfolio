@@ -104,7 +104,7 @@
         left: 50%; /* Positionne la sidebar au centre horizontalement */
         transform: translateX(-50%); /* Centre la sidebar en utilisant une translation */
         width: 95% !important;
-        height: 45px !important;
+        height: 60px !important;
         flex-direction: row;
         padding: 0;
         margin-left: 0 !important;
