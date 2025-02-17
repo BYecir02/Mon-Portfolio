@@ -101,16 +101,19 @@
         position: fixed !important;
         top: auto !important; /* Annule le top: 0 desktop */
         bottom: 0 !important;
-        left: 0;
-        width: 100% !important;
+        left: 50%; /* Positionne la sidebar au centre horizontalement */
+        transform: translateX(-50%); /* Centre la sidebar en utilisant une translation */
+        width: 95% !important;
         height: 45px !important;
         flex-direction: row;
         padding: 0;
         margin-left: 0 !important;
-        background-color: #F6B83D;
+        background-color: #303531; /* Couleur gris foncé pour s'harmoniser avec le site */
         backdrop-filter: blur(10px); /* Ajout de l'effet de flou */
-        border-top-left-radius: 30px ;
-        border-top-right-radius: 30px ;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    
+        
     }
 
     .sidebar ul {
