@@ -103,15 +103,27 @@
         bottom: 0 !important;
         left: 0;
         width: 100% !important;
-        height: 65px !important;
+        height: 45px !important;
         flex-direction: row;
         padding: 0;
         margin-left: 0 !important;
+        background-color: #F6B83D;
+        backdrop-filter: blur(10px); /* Ajout de l'effet de flou */
+        border-top-left-radius: 30px ;
+        border-top-right-radius: 30px ;
     }
 
     .sidebar ul {
         flex-direction: row !important;
         justify-content: space-around !important;
+        align-items: center;
+        width: 90% !important;
+        justify-content: space-between !important; /* Répartit les liens de manière égale */
+    }
+
+    .sidebar ul li {
+        flex: 1; /* Chaque élément de la liste prend une part égale de l'espace disponible */
+        text-align: center; /* Centre le contenu de chaque élément */
     }
 
     .sidebar ul li a {
