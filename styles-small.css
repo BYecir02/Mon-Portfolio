@@ -88,21 +88,41 @@
     .parcour-container {
       flex-direction: column;
       align-items: center;
-      gap: 30px;
+      gap: 20px;
     }
   
+    .point-container {
+        gap: 0;
+    }
+
     .etude-container, .experience-container {
-      width: 90% !important;
+      width: 100% !important;
       height: auto !important;
       padding: 40px 0;
     }
   
-    .texte-gauche, .texte-droit {
-      width: 120px;
+    .etude-container, .experience-container span{
+        text-align: center;
+        font-size: 12px;
+        align-items: center;
+    }
+
+    .texte-gauche {
+      width: 100px;
       font-size: 12px !important;
       padding: 10px !important;
+      text-align: right;
+      margin-right: 20px;
     }
   
+    .texte-droit {
+        width: 100px;
+        font-size: 12px !important;
+        padding: 10px !important;
+        text-align: left;
+        margin-left: 20px; /* Réduisez la marge pour rapprocher le texte */
+      }
+
     .sidebar {
         position: fixed !important;
         top: auto !important; /* Annule le top: 0 desktop */
@@ -207,6 +227,6 @@
   }
   
   .parcour-container {
-    padding: 20px;
+    padding: 15px;
   }
   
